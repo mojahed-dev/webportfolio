@@ -1,0 +1,178 @@
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+
+a.nav-link {
+	font-size: 20px;
+}
+
+/*.card {
+	width: 25rem;
+}*/
+
+/* Push items to the right */
+.navbar-nav {
+	margin-left: auto;
+}
+
+/* Add margin between items */
+.navbar-nav .nav-item:not(:last-child) {
+	margin-right: 15px; 
+}
+
+.custom-margin {
+    margin-right: 10px; 
+}
+
+.custom-margin:last-child {
+    margin-right: 0;
+}
+
+
+.card-footer {
+	border: none;
+    background: none;
+}
+
+.card {
+	border-radius: 25px;
+	border: 3px solid black;
+}
+
+.card img {
+	border-radius: 25px;
+}
+
+
+button {
+	border-radius: 25px !important;
+}
+
+a.btn-contact {
+	background-color: black !important;
+	border-radius: 25px !important;
+}
+
+.title {
+	font-size: 3rem;
+	font-weight: bold;
+	text
+}
+
+.role {
+	font-size: 600;
+	font-size: 1.50rem;
+}
+
+
+#landing, .navbar, #tools, .card-project {
+	background-color: #F9F9F9 !important;
+}
+
+.section-title {
+	font-size: 3rem;
+	letter-spacing: 2px;
+}
+
+.sub-title {
+	color: gray;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+/*@media (min-width: 1025px) {*/
+
+/*  .navigation {
+	margin-left: 10%;
+	margin-right: 10%;
+	}*/
+
+/*}*/
+
+#landing {
+	background-color: whitesmoke;
+}
+
+@media (min-width: 992px) {
+  #projects, #tools, #contact {
+		padding-top: 100px !important; /* Adjust as needed */
+	}
+  
+}
+
+
+/* Adding underline when mouse hover nav links */
+a.nav-link:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+	border: 2px solid black !important;
+	border-radius: 3px;
+	background-color: black;
+ }
+
+/*.navbar-dark .navbar-toggler-icon {
+	background: transparent; 
+    background-color: gray !important;
+    border-radius: 3px !important;
+} */  
+
+/*To remove box shadow when click hamburger*/
+.navbar-toggler:focus {
+	box-shadow: none !important;
+}   
+
+
+.btn-1, .btn-2 {
+	    background-color: transparent;
+	    color: black;
+	    border: 3px solid black;
+}  
+
+input {
+	height: 50px;
+    border: 3px solid black !important;
+    border-radius: 5px !important;
+}
+
+ textarea {
+ 	border: 3px solid black !important;
+    border-radius: 5px !important;
+ }
+
+ .nav-links > ul > li {
+ 	font-size: 20px !important;
+ }
+
+
+ /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  a.li {
+  	padding: 2px !important;
+  	margin: 2px !important;
+  }
+  a.nav-link {
+  	padding: 5px !important;
+  	margin: 5px !important;
+  }
+}
+
+
+
+
+
