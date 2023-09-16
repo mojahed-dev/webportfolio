@@ -3,8 +3,14 @@
 }
 
 
-a.nav-link {
+a.nav-link{
 	font-size: 20px;
+	font-weight: 500;
+	color: black !important;
+}
+
+.navbar-brand {
+	font-weight: 900;
 }
 
 /*.card {
@@ -12,15 +18,15 @@ a.nav-link {
 }*/
 
 /* Push items to the right */
-.navbar-nav {
-	margin-left: auto;
-}
+/*.navbar-nav {
+	margin-left: auto; // Commented this for tha mean time
+}*/
 
 /* Add margin between items */
-.navbar-nav .nav-item:not(:last-child) {
+/*.navbar-nav .nav-item:not(:last-child) { // Commented this for tha mean time
 	margin-right: 15px; 
 }
-
+*/
 .custom-margin {
     margin-right: 10px; 
 }
@@ -116,11 +122,11 @@ a.nav-link:hover {
     font-weight: bold;
 }
 
-.navbar-toggler-icon {
-	border: 2px solid black !important;
+/*.navbar-toggler-icon {
+	border: 2px solid black !important; //Commented this for the meantime
 	border-radius: 3px;
 	background-color: black;
- }
+ }*/
 
 /*.navbar-dark .navbar-toggler-icon {
 	background: transparent; 
@@ -129,9 +135,9 @@ a.nav-link:hover {
 } */  
 
 /*To remove box shadow when click hamburger*/
-.navbar-toggler:focus {
-	box-shadow: none !important;
-}   
+/*.navbar-toggler:focus {
+	box-shadow: none !important; //Commented this for the mean time
+}   */
 
 
 .btn-1, .btn-2 {
@@ -161,7 +167,7 @@ input {
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+/*@media (min-width: 320px) and (max-width: 480px) {
   a.li {
   	padding: 2px !important;
   	margin: 2px !important;
@@ -171,7 +177,7 @@ input {
   	margin: 5px !important;
   }
 }
-
+*/
 
 
 
