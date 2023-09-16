@@ -3,8 +3,7 @@
 }
 
 .profile-img {
-	filter: grayscale(100%);
-	border: none;
+	 filter: grayscale(100%) contrast(200%) brightness(50%);
 }
 
 a.nav-link{
