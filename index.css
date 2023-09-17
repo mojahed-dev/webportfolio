@@ -1,10 +1,50 @@
 * {
 	font-family: 'Poppins', sans-serif;
+	margin: 0;
+		padding: 0;
+		box-sizing: border-box;
 }
 
-#landing {
-	height: 100vh;
+nav {
+	background: #131039 !important;
 }
+
+
+
+a.navbar-brand, .nav-item a {
+	color: #00C89D !important;
+}
+
+h1 {
+	color: #00C89D !important;
+}
+
+
+h6, p{
+	color: #C6FCEC !important;
+}
+
+p.desc {
+	color: #131039 !important;
+}
+
+section #landing{
+	height: 100vh !important;
+	background: #131039 !important;
+}
+
+#tools {
+/*	height: 100vh !important;*/
+	background: #131039;
+}
+
+
+#projects {
+/*	height: 100vh !important;*/
+	background:#C6FCEC !important;
+}
+
+
 
 .profile-img {
 	 filter: grayscale(100%) contrast(200%) brightness(50%);
@@ -13,27 +53,14 @@
 a.nav-link{
 	font-size: 20px;
 	font-weight: 500;
-	color: black !important;
+/*	color: black !important;*/
 }
 
 .navbar-brand {
 	font-weight: 900;
 }
 
-/*.card {
-	width: 25rem;
-}*/
 
-/* Push items to the right */
-/*.navbar-nav {
-	margin-left: auto; // Commented this for tha mean time
-}*/
-
-/* Add margin between items */
-/*.navbar-nav .nav-item:not(:last-child) { // Commented this for tha mean time
-	margin-right: 15px; 
-}
-*/
 .custom-margin {
     margin-right: 10px; 
 }
@@ -63,7 +90,8 @@ button {
 }
 
 a.btn-contact {
-	background-color: black !important;
+	background-color: white !important;
+	color: black !important;
 	border-radius: 25px !important;
 }
 
@@ -79,89 +107,99 @@ a.btn-contact {
 }
 
 
-#landing, .navbar, #tools, .card-project {
-	background-color: #F9F9F9 !important;
-}
 
 .section-title {
 	font-size: 3rem;
 	letter-spacing: 2px;
+	color: #131039;
 }
 
-.sub-title {
-	color: gray;
+.sub-title, .section-title-tools {
+	color: #00C89D !important;
     margin-bottom: 5px;
     font-size: 14px;
 }
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-/*@media (min-width: 1025px) {*/
-
-/*  .navigation {
-	margin-left: 10%;
-	margin-right: 10%;
-	}*/
-
-/*}*/
-
-#landing {
-	background-color: whitesmoke;
+.sub-title-tools {
+	color: #FFFFFF !important;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
+
+
+.section-title-tools  {
+	color: #00C89D !important;
+	font-size: 3rem;
+	letter-spacing: 2px;
+}
+
 
 @media (min-width: 992px) {
   #projects, #tools, #contact {
 		padding-top: 100px !important; /* Adjust as needed */
 	}
+
+	.form-col {
+		padding: 50px;
+	    border-radius: 25px;
+	    box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+	    -webkit-box-shadow: -1px 1px 12px 7px #1310391a;
+	    -moz-box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+	    width: 35%;
+	}
+
   
 }
 
 
 /* Adding underline when mouse hover nav links */
 a.nav-link:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
-    font-weight: bold;
+  color: grey; /* Text color on hover */
+  text-decoration: underline; /* Underline on hover */
+  text-underline-offset: 1rem; /* Adjust the underline offset as needed */
+  text-decoration-color: white; /* Color of the underline on hover */
+  font-weight: bold; /* Make the text bold on hover */
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for thickness */
 }
 
-/*.navbar-toggler-icon {
-	border: 2px solid black !important; //Commented this for the meantime
-	border-radius: 3px;
-	background-color: black;
- }*/
-
-/*.navbar-dark .navbar-toggler-icon {
-	background: transparent; 
-    background-color: gray !important;
-    border-radius: 3px !important;
-} */  
-
-/*To remove box shadow when click hamburger*/
-/*.navbar-toggler:focus {
-	box-shadow: none !important; //Commented this for the mean time
-}   */
 
 
 .btn-1, .btn-2 {
-	    background-color: transparent;
-	    color: black;
-	    border: 3px solid black;
+	    background-color: #00C89D;
+	    font-weight: 600;
+	    color: #131039;
+	    border: none;
 }  
+
+.btn-1:hover {
+	background-color: white;
+	color: #131039;
+}
+
+.btn-2:hover {
+	border: 3px solid #00C89D;
+}
+
+.btn-send {
+	background-color: #131039;
+	color: white;
+	font-weight: 500;
+}
+
+.btn-send:hover {
+	background: whitesmoke;
+	color: #131039;
+}
 
 input {
 	height: 50px;
-    border: 3px solid black !important;
     border-radius: 5px !important;
+    margin-top: 12px;
 }
 
  textarea {
- 	border: 3px solid black !important;
     border-radius: 5px !important;
+     margin-top: 12px !important;
  }
 
  .nav-links > ul > li {
@@ -169,23 +207,133 @@ input {
  }
 
 
- /* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
 
-/*@media (min-width: 320px) and (max-width: 480px) {
-  a.li {
-  	padding: 2px !important;
-  	margin: 2px !important;
+ /* Custom CSS to add margin-top on small screens */
+@media (max-width: 575px) {
+  .mt-sm-3-custom {
+    margin-top: 2rem !important; /* Adjust the value as needed */
   }
-  a.nav-link {
-  	padding: 5px !important;
-  	margin: 5px !important;
+  .sub-title-tools, .section-title-tools {
+  	text-align: center;
   }
+
+  .form-col {
+	padding: 50px;
+    border-radius: 25px;
+    box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+    -webkit-box-shadow: -1px 1px 12px 7px #1310391a;
+    -moz-box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3px;
+    margin-bottom: 24px;
+    margin-top: 35px !important;
+	}
+
+
+
+	nav, section, footer {
+		padding: 0 20px !important;
+	}
+
+	section #landing {
+		height: 825px !important;
+	}
+
+	.subtitle-contact {
+		padding-top: 25px;
+	}
+
 }
+
+
+img.project-img {
+	border-top-right-radius: 20px !important; /* Adjust the value for the top-left corner */
+  border-bottom-left-radius: 20px !important; /* Adjust the value for the bottom-right corner */
+}
+
+
+.stacks {
+/*  	background-color: #00c89d2b;*/
+    padding-top: 12px;
+   border-bottom-right-radius: 20px !important; /* Adjust the value for the top-left corner */
+  border-top-left-radius: 20px !important; /* Adjust the value for the bottom-right corner */
+
+   box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+   -webkit-box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+   -moz-box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+}
+
+.tech {
+	transition: transform 0.3s ease; /* Add a smooth transition for the zoom effect */
+	cursor: pointer;
+}
+
+.tech:hover {
+    transform: scale(1.4); /* Zoom in by 10% on hover */
+/*   box-shadow: 0px 8px 12px rgba(0, 100, 0, 0.5); /* Green box shadow on hover */
+       background: #00C89D;
+       border-radius: 5px;
+       box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.24);
+       -webkit-box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.24);
+       -moz-box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.24);
+  }
+
+  /* Apply styles to the <p> element when hovering over the .tech container */
+.tech:hover p {
+  color: #131039 !important;
+  font-weight: 600;
+}
+
+main {
+	background: #131039;
+}
+section#contact {
+/*	border-top-right-radius: 50px;
+    border-top-left-radius: 50px;*/
+/*    background: #00C89D;*/
+
+    background: rgb(19,16,57);
+    background: linear-gradient(189deg, rgba(19,16,57,1) 0%, rgba(0,200,157,1) 59%);
+   /* box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+    -webkit-box-shadow: -1px 1px 12px 7px #35dcc6;
 */
+}
+
+footer {
+	background:#00C89D;
+}
+
+.contact-icon {
+	padding: 10px 12px;
+	border-radius: 5px;
+	box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+	-webkit-box-shadow: -1px 1px 12px 7px #1310391a;
+	-moz-box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+}
 
 
+.form-col {
+	padding: 50px;
+    border-radius: 25px;
+    box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+    -webkit-box-shadow: -1px 1px 12px 7px #1310391a;
+    -moz-box-shadow: -1px 1px 12px 7px rgba(0,200,157,0.05);
+}
 
+#hr {
+	border-top: 1px solid grey;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
 
+.footer-nav li a {
+	color: #131039 !important;
+}
+
+footer > p {
+	color: #131039 !important;
+}
