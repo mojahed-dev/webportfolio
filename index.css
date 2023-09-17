@@ -25,7 +25,7 @@ h6, p{
 }
 
 p.desc {
-	color: #131039 !important;
+	color: white; !important;
 }
 
 section #landing{
@@ -41,7 +41,7 @@ section #landing{
 
 #projects {
 /*	height: 100vh !important;*/
-	background:#C6FCEC !important;
+	background:#00C89D !important;
 }
 
 
@@ -189,6 +189,28 @@ a.nav-link:hover {
 .btn-send:hover {
 	background: whitesmoke;
 	color: #131039;
+}
+
+.g-btn {
+	background-color: #131039;
+	border: none;
+	color: #00C89D;
+}
+
+.g-btn:hover {
+	background-color: #4F8073;
+	color: #FFFFFF
+}
+
+.d-btn {
+	background-color: #C6FCEC;
+	border: none;
+	color: #00C89D;
+}
+
+.d-btn:hover {
+	background-color: #4F8073;
+	color: #FFFFFF
 }
 
 input {
