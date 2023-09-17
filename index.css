@@ -2,6 +2,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+#landing {
+	height: 100vh;
+}
+
 .profile-img {
 	 filter: grayscale(100%) contrast(200%) brightness(50%);
 }
